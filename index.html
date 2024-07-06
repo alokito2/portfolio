@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+    <style>
+        /* Add CSS animation for moving the name */
+        @keyframes moveName {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-200px); } /* Move left */
+            75% { transform: translateX(0); } /* Move back to the center */
+            50% { transform: translateX(200px); } 
+        }
+
+        .hero_title span {
+            display: inline-block; /* Ensure the span is displayed as a block element */
+            animation: moveName 5s linear infinite; /* Adjust animation duration and timing as needed */
+        }
+       
+
+    </style>
+</head>
+<body>
+    <!-- main banner -->    
+    <section id="home" class="bgimage">
+        <div class="hero-text">
+            <!-- Add a span around your name for animation -->
+            <h1 class="hero_title animate__animated animate__fadeIn"><span><i>Sachin Patel</i></span></h1>
+            <p class="hero_desc animate__animated animate__fadeIn"><l>Welcome to My Portfolio</l></p>
+            <a href="index1.html" class="visit-button">Visit Portfolio</a>
+        </div>
+    </section>
+    <script src="script/script.js"></script>
+</body>
+</html>
